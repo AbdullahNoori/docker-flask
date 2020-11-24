@@ -1,0 +1,203 @@
+body {
+    margin: 50;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:rgb(229, 223, 233);
+    line-height: 1;
+}
+
+nav, main > section {
+    overflow: auto;
+}
+
+main > section, main > footer {
+    min-height: 10vh;
+}
+
+/* Style the nav bar */
+#nav {
+    nav-up: inverse;
+    position:fixed-top;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1em;
+    background-color: hsl(fff);
+    color: black;
+    display: flex;
+}
+
+nav h1, ul {
+    margin: 25
+
+}
+
+nav a {
+    text-decoration: none;
+    color: tomato;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    padding: 1em;
+    color: tomato;
+}
+
+nav ul a:hover {
+    color: tomato;
+}
+
+#physical {
+    background-color: hsl(tomato);
+    background-image: url(https://blog.nemours.org/wp-content/uploads/2018/08/Sun-Safety-kids2.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: auto;
+    font-size: 4em;
+    color: tomato;
+}
+#physical > div {
+    position: relative;
+    left: -120px;
+    top: 120px;
+}
+#physical h2, #physical p {
+    margin: 0;
+    text-shadow: 0 0 20px #000000;
+}
+/* Create some cards in this section */
+#programm {
+    background-color:hsl(lime);
+}
+#programm ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#programm > h2 {
+    margin: 1em;
+    font-size: 3em;
+    text-align: center;
+    color: limegreen;
+}
+
+.card {
+    width: 400px;
+    margin: 1em;
+    background-color: whitesmoke;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
+    text-emphasis-color: limegreen;
+}
+
+.card img {
+    width: 100%;
+}
+.card h3 {
+    font-size: 2em;
+}
+.card h3, .card p {
+    margin: 1rem;
+}
+#emotional {
+    background-color: hsl(limegreen);
+    background-image: url(img/pieces1);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style this */
+#social {
+    background-color: hsl(black);
+    display: i;
+    color: #fff;
+    background-image: url(https://encryptedhttps://www.readingrockets.org/sites/default/files/atoz_motivation2.jpg-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9UZ7cA6hhuUUQko-Hhav0ANrqx6MOzUEDWg&usqp=CAU);
+    background-size: contain;
+
+}
+
+#social  > div {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+#social  h2, #social  p {
+    margin: 0 0 1rem 0;
+}
+
+#social  h2 {
+    font-size: 2em;
+}
+
+#social  > div > div:nth-child(1) {
+    flex: 3;
+    margin: 0 2em 0 0;
+}
+
+#social  > div > div:nth-child(2) {
+    flex: 2;
+}
+
+#contact {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#contact > form {
+    display: flex;
+}
+
+#contact > form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 1em 0;
+}
+
+label span {
+    margin: 1em 0;
+}
+
+input, textarea {
+    border: 1px solid rgb(12, 12, 12);
+    padding: 0.5em;
+    margin: 0 1em 0 0;
+    width: 10em;
+    font-size: 1em;
+}
+
+textarea {
+    height: 2em;
+    margin: 0 0 0 0;
+}
+
+form button {
+    width: auto;
+    font-size: 1em;
+    margin: 1em 0;
+    align-self: flex-end;
+    padding: 0.5em 1em;
+    background-color:rgb();
+    color: tomato;
+    border: none;
+}
