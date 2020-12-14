@@ -1,0 +1,15 @@
+version: '3.7'
+services:    
+    web:
+        image: docker-flask-main
+        build: .
+        command: python3 app.js
+        ports: 
+            - "4040:4040"
+            
+        depends_on:
+            - mongodb
+    mongodb:
+        image: "mongo"
+        ports:
+            - "27017:27017"
