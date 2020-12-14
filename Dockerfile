@@ -1,24 +1,16 @@
-# ---- Base Node ----
-FROM python:3
+FROM ubuntu:16.04
 
-# Create directory
-RUN mkdir -p /app
+RUN apt-get update -y && \
+    apt-get install -y python-pip python-dev
 
-# Set directory
+COPY ./requirements.txt /app/requirements.txt
+
 WORKDIR /app
 
-# Copy dependencies
-COPY ./requirements.txt /app
+RUN pip install -r requirements.txt
 
-# install app dependencies
-RUN pip i -r requirements 
+COPY . /app
 
-# copy project 
-COPY ./ /app
+ENTRYPOINT [ "python" ]
 
-
-# open port
-EXPOSE 5000 
-
-# start project
-CMD ["python", "app.py"]
+CMD [ "app.py" ]
