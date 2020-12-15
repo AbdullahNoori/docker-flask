@@ -1,7 +1,6 @@
 # Pulls a base image from version 16 of ubuntu/Docker must contain all the dependencies necessary to launch Python.
 FROM ubuntu:16.04
 
-
 # Docker runs docker-flask.
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
