@@ -1,4 +1,4 @@
-# Pulls a base image from version 16 of ubuntu
+# Pulls a base image from version 16 of ubuntu/Docker must contain all the dependencies necessary to launch Python.
 FROM ubuntu:16.04
 
 
