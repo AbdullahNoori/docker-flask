@@ -1,5 +1,17 @@
-FROM python:3.6.1-alpine
-WORKDIR /flask
-ADD . /flask
+
+FROM ubuntu:16.04
+
+RUN apt-get update -y && \
+    apt-get install -y python-pip python-dev
+
+COPY ./requirements.txt /app/requirements.txt
+
+WORKDIR /app
+
 RUN pip install -r requirements.txt
-CMD ["flask", "run", "--host=0.0.0.0"]
+
+COPY . /app
+
+ENTRYPOINT [ "python" ]
+
+CMD [ "app.py" ]
