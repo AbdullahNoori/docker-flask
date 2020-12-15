@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+    web:
+      # image/template
+        image: docker-flask
+        #builds current directory
+        build: .
+        command: flask run
+        # intilizes ports
+        ports:
+            - "5000:5000"
+        # intializes depend_on
+        depends_on:
+            - mongodb
+  # tells mongo to run the container
+    mongodb:
+        image: "mongo"
+        ports:
+            - "27017:27017"
+
